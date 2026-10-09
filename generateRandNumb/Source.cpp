@@ -22,10 +22,10 @@ int generateRandNumb() {
 
 	int leftBorder, rightBorder;
 
-	std::cout << "Enter left border" << std::endl;
+	std::cout << "Enter min value" << std::endl;
 	leftBorder = inputNumber(errorMessage);
 
-	std::cout << "Enter right border" << std::endl;
+	std::cout << "Enter max value" << std::endl;
 	rightBorder = inputNumber(errorMessage);
 
 	return rand() % (rightBorder - leftBorder + 1) + leftBorder;
